@@ -1,56 +1,49 @@
-📊 Sales Report – Power BI Dashboard
-📌 Project Overview
+# 📊 Sales Report – Power BI Dashboard
 
-This project is a professional-grade Power BI Sales Report dashboard designed to transform raw transactional sales data into actionable business intelligence. The dashboard provides a 360-degree view of sales performance, helping stakeholders monitor KPIs, analyze trends, and identify growth opportunities using data-driven insights.
+## 📌 Project Overview
+This project is a professional-grade Power BI Sales Report dashboard designed to transform raw transactional sales data into actionable business intelligence. The dashboard provides a 360-degree view of sales performance, enabling stakeholders to track KPIs, analyze trends, and identify growth opportunities.
 
-🎯 Objectives
+---
 
-Convert raw sales data into meaningful insights
+## 🎯 Objectives
+- Convert raw sales data into meaningful insights
+- Monitor key sales KPIs
+- Identify sales trends and growth opportunities
+- Support data-driven decision making
+- Present insights through interactive visuals
 
-Monitor key sales KPIs in real time
+---
 
-Identify sales trends, patterns, and growth opportunities
+## 🧩 Key Features
+- 📈 Sales performance overview
+- 🏷️ Product & category-wise analysis
+- 🌍 Region-wise sales insights
+- 📅 Time-based trend analysis
+- 🎯 KPI cards and metrics
+- 🔍 Interactive filters and slicers
 
-Support strategic and operational decision-making
+---
 
-Present insights in a clean, interactive, and user-friendly dashboard
+## 🛠️ Tools & Technologies
+- Power BI Desktop
+- DAX (Data Analysis Expressions)
+- Power Query (ETL)
+- CSV / Excel Dataset
 
-🧩 Key Features
+---
 
-📈 Sales Performance Analysis (Total Sales, Revenue Trends)
-
-🏷️ Product-wise & Category-wise Analysis
-
-🌍 Region / Location-based Sales Insights
-
-📅 Time Intelligence (Daily, Monthly, Yearly trends)
-
-🎯 KPIs & Metrics Cards
-
-🔍 Interactive Filters & Slicers
-
-⚡ Optimized data model for fast performance
-
-🛠️ Tools & Technologies Used
-
-Power BI Desktop
-
-DAX (Data Analysis Expressions)
-
-Power Query (ETL)
-
-CSV / Excel Sales Dataset
-
-📂 Project Structure
+## 📂 Project Structure
+```text
 Sales-Report-PowerBI/
 │
-├── Sales Report.pbix        # Main Power BI dashboard file
-├── dataset/                # Raw sales data (CSV / Excel)
-├── images/                 # Dashboard screenshots
-└── README.md               # Project documentation
+├── Sales Report.pbix
+├── dataset/
+│   └── sales_data.csv
+├── images/
+│   └── dashboard.png
+└── README.md
 📥 Dataset Description
-
-The dataset contains transactional sales records with fields such as:
+The dataset contains transactional sales data including:
 
 Order ID
 
@@ -60,155 +53,96 @@ Product Name
 
 Category
 
-Sales Amount
+Sales
 
-Quantity Sold
+Quantity
 
 Profit
 
-Region / City / Country
+Region
 
-Note: Dataset can be replaced with any similar sales dataset.
+🔄 Data Preparation (ETL)
+Removed null and duplicate records
 
-🔄 Data Preparation (ETL Process)
+Cleaned and standardized columns
 
-Performed using Power Query:
+Converted data types
 
-Removed null and duplicate values
+Created calculated columns
 
-Standardized column names
-
-Converted data types (Date, Currency, Numbers)
-
-Created calculated columns where required
-
-Loaded clean data into Power BI model
+Loaded clean data into Power BI
 
 📐 Data Modeling
-
 Star schema design
 
 Fact table: Sales
 
 Dimension tables: Date, Product, Region
 
-Relationships created using primary & foreign keys
+Optimized relationships for performance
 
-Proper cardinality and cross-filter direction applied
-
-🧮 DAX Measures (Examples)
-Total Sales = SUM(Sales[Sales Amount])
-
+🧮 DAX Measures
+DAX
+Copy code
+Total Sales = SUM(Sales[Sales])
 
 Total Profit = SUM(Sales[Profit])
 
-
 Profit Margin = DIVIDE([Total Profit], [Total Sales])
-
-
-Sales YoY Growth =
-CALCULATE(
-    [Total Sales] - SAMEPERIODLASTYEAR([Total Sales]),
-    SAMEPERIODLASTYEAR('Date'[Date])
-)
 📊 Dashboard Pages
 1️⃣ Sales Overview
-
 Total Sales
 
 Total Profit
 
-Sales Trend Line
-
 KPI Cards
 
 2️⃣ Product Analysis
+Top products
 
-Top-selling products
-
-Category-wise sales
-
-Product performance comparison
+Category-wise performance
 
 3️⃣ Regional Analysis
-
-Sales by region
-
-Geographic performance
-
 Region-wise contribution
 
 4️⃣ Time Analysis
-
 Monthly & yearly trends
 
-Seasonal patterns
-
-Growth comparison
-
 🎛️ Interactivity
+Slicers for Date, Region, Product
 
-Slicers for Date, Region, Product, Category
+Drill-down & cross-filtering
 
-Cross-filtering between visuals
-
-Drill-down & drill-through features
-
-📸 Screenshots
-
-Add dashboard screenshots in the /images folder and link them here.
-
-🚀 How to Use This Project
-
-Clone the repository
-
+🚀 How to Run
+bash
+Copy code
 git clone https://github.com/mukeshkd58/Sales_Report_Python_SQL_PowerBI
-
 Open Sales Report.pbix in Power BI Desktop
-
-Load or replace dataset if required
 
 Refresh the data
 
-Explore the dashboard interactively
+Explore the dashboard
 
 📌 Use Cases
+Business reporting
 
-Business sales monitoring
+Sales analysis
 
-Management reporting
-
-Portfolio project for Data Analysts
-
-Power BI practice & learning
+Power BI portfolio project
 
 🧠 Learning Outcomes
+Power BI dashboard development
 
-Power BI dashboard design
+DAX fundamentals
 
-Data modeling best practices
-
-Writing optimized DAX measures
-
-Business storytelling with data
+Data storytelling
 
 🤝 Contribution
+Feel free to fork this repository and submit pull requests.
 
-Contributions are welcome!
+📬 Author
+Mukesh Kumar
+Power BI | Data Analysis | Data Visualization
 
-Fork the repository
-
-Create a feature branch
-
-Commit your changes
-
-Open a pull request
-
-📬 Contact
-
-Author: Mukesh Kumar
-Skills: Power BI | Data Analysis | Data Visualization
-
-⭐ If you like this project
-
-Give it a ⭐ on GitHub to support and motivate further work!
+⭐ Support
+If you like this project, give it a ⭐ on GitHub!
